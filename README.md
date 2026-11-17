@@ -24,6 +24,8 @@ The registration form is front-end only. It does not send or save personal infor
 
 ## Deploy
 
-The `Deploy static site to GitHub Pages` workflow publishes the site on every push to `main`. Once the first deployment completes, the public site is available at <https://jayant00007.github.io/College_Fest/>.
+For the first deployment, open the repository’s **Settings → Pages** and set **Build and deployment → Source** to **GitHub Actions**. The repository owner must save this setting.
+
+After Pages is enabled, the `Deploy static site to GitHub Pages` workflow publishes the site on every push to `main`. The public site is available at <https://jayant00007.github.io/College_Fest/>.
 
 No build command is needed. The workflow publishes `index.html`, `styles.css` and `app.js`.
