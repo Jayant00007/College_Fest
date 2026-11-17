@@ -169,6 +169,31 @@
         <p class="eyebrow">YOUR THREE-DAY YES</p>
         <h2 id="register-title">Make room<br>for the unexpected.</h2>
         <p>Pick your events, bring your people, and let the next three days surprise you.</p>
+        <form class="signup-form" id="registration-form">
+          <div class="form-field">
+            <label for="visitor-name">YOUR NAME</label>
+            <input id="visitor-name" name="name" type="text" autocomplete="name" minlength="2" required>
+          </div>
+          <div class="form-field">
+            <label for="visitor-email">EMAIL ADDRESS</label>
+            <input id="visitor-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="form-field form-field-wide">
+            <label for="event-choice">WHAT ARE YOU MOST EXCITED FOR?</label>
+            <select id="event-choice" name="event" required>
+              <option value="">Choose your first stop</option>
+              <option value="Afterglow Live">Afterglow Live</option>
+              <option value="Unfiltered Talks">Unfiltered Talks</option>
+              <option value="Good Thing Studio">Good Thing Studio</option>
+              <option value="Campus Quest">Campus Quest</option>
+              <option value="Move Together">Move Together</option>
+              <option value="Soft Landing">Soft Landing</option>
+            </select>
+          </div>
+          <button class="button button-dark form-field-wide" type="submit">Count me in <span aria-hidden="true">↗</span></button>
+          <p class="form-note form-field-wide">This is a demo form. Your details stay on this page and aren’t sent or saved.</p>
+          <p class="form-message form-field-wide" id="form-message" role="status" aria-live="polite"></p>
+        </form>
       </section>
     </main>
 

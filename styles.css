@@ -581,6 +581,73 @@ a {
   line-height: 1.7;
 }
 
+.signup-form {
+  display: grid;
+  max-width: 42rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.1rem;
+  margin-top: 2rem;
+}
+
+.form-field {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.form-field label {
+  color: #43511e;
+  font-size: 0.62rem;
+  font-weight: 850;
+  letter-spacing: 0.11em;
+}
+
+.form-field input,
+.form-field select {
+  width: 100%;
+  min-height: 3rem;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid rgba(17, 26, 43, 0.28);
+  border-radius: 0.45rem;
+  background: rgba(255, 255, 255, 0.55);
+  color: var(--night);
+  font: inherit;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+  outline: 3px solid rgba(17, 26, 43, 0.22);
+  outline-offset: 2px;
+}
+
+.form-field-wide {
+  grid-column: 1 / -1;
+}
+
+.button-dark {
+  justify-self: start;
+  border: 0;
+  background: var(--night);
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+}
+
+.button-dark:hover {
+  background: #283650;
+}
+
+.form-note,
+.form-message {
+  margin: 0;
+  color: #43511e;
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+.form-message:empty {
+  display: none;
+}
+
 .site-footer {
   display: flex;
   align-items: center;

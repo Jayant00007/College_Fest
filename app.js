@@ -28,3 +28,19 @@ function updateCountdown() {
 
 updateCountdown();
 window.setInterval(updateCountdown, 1000);
+
+const registrationForm = document.querySelector("#registration-form");
+const formMessage = document.querySelector("#form-message");
+
+registrationForm?.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const formData = new FormData(registrationForm);
+  const visitorName = String(formData.get("name")).trim();
+  const eventChoice = String(formData.get("event"));
+
+  if (!formMessage) return;
+
+  formMessage.textContent = `Thanks, ${visitorName}! ${eventChoice} sounds like a great first stop. This demo hasn’t sent or saved your details.`;
+  registrationForm.reset();
+});
