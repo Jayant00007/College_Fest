@@ -436,10 +436,68 @@ a {
   letter-spacing: 0.07em;
 }
 
-.schedule-list,
 .team-grid,
 .event-grid {
   margin-top: 3rem;
+}
+
+.table-wrap {
+  margin-top: 3rem;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+}
+
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.schedule-table th,
+.schedule-table td {
+  padding: 1.15rem 1.25rem;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.82rem;
+}
+
+.schedule-table thead th {
+  background: var(--panel);
+  color: var(--muted);
+  font-size: 0.59rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+.schedule-table tbody tr:last-child > * {
+  border-bottom: 0;
+}
+
+.schedule-table tbody tr:hover {
+  background: rgba(247, 244, 237, 0.035);
+}
+
+.schedule-table tbody th {
+  min-width: 7.5rem;
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.schedule-table tbody th span {
+  display: inline-block;
+  min-width: 2rem;
+  color: var(--lime);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+}
+
+.schedule-table tbody td {
+  color: var(--muted);
+}
+
+.schedule-table tbody td:nth-child(3) {
+  color: var(--ink);
+  font-weight: 650;
 }
 
 .register-section {
