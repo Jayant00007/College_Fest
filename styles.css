@@ -768,9 +768,40 @@ button:focus-visible,
 
   .hero-art {
     top: 31%;
-    right: -17%;
-    width: 68vw;
-    opacity: 0.36;
+    right: 0;
+    width: 62vw;
+    opacity: 0.28;
+  }
+
+  .countdown {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .countdown-label {
+    max-width: none;
+  }
+
+  .countdown-units {
+    gap: 0.2rem;
+  }
+
+  .countdown-units > span {
+    min-width: 2.5rem;
+  }
+
+  .countdown-units strong {
+    font-size: 1.15rem;
+  }
+
+  .countdown-label {
+    max-width: none;
+  }
+
+  .hero-caption {
+    right: 12%;
+    font-size: 0.55rem;
   }
 
   .hero-meta {
