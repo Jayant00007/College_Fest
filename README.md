@@ -24,4 +24,6 @@ The registration form is front-end only. It does not send or save personal infor
 
 ## Deploy
 
-This is a static site: publish the project folder with GitHub Pages, Netlify or Vercel. No build command is needed; use the repository root as the publish directory.
+The `Deploy static site to GitHub Pages` workflow publishes the site on every push to `main`. Once the first deployment completes, the public site is available at <https://jayant00007.github.io/College_Fest/>.
+
+No build command is needed. The workflow publishes `index.html`, `styles.css` and `app.js`.
