@@ -500,6 +500,71 @@ a {
   font-weight: 650;
 }
 
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.team-card {
+  padding: 1.4rem;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  background: var(--panel);
+}
+
+.team-avatar {
+  display: grid;
+  width: 3.5rem;
+  aspect-ratio: 1;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--night);
+  font-size: 0.85rem;
+  font-weight: 850;
+}
+
+.avatar-coral { background: var(--coral); }
+.avatar-violet { background: var(--violet); }
+.avatar-blue { background: #8bc6f4; }
+.avatar-lime { background: var(--lime); }
+
+.team-card h3 {
+  margin: 1.2rem 0 0.35rem;
+  font-size: 1rem;
+}
+
+.team-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.partner-block {
+  margin-top: 4.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+}
+
+.partner-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  color: var(--ink);
+  font-size: clamp(1rem, 2vw, 1.45rem);
+  font-weight: 850;
+  letter-spacing: -0.05em;
+}
+
+.partner-light {
+  padding-left: 0.25rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+
 .register-section {
   padding: 7rem var(--page-gutter);
   background: var(--lime);
