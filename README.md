@@ -2,6 +2,12 @@
 
 A responsive landing page for a fictional college festival, built with plain HTML, CSS and JavaScript.
 
+## Live website
+
+**[Visit Orbit 2027](https://collegefest-five.vercel.app/)**
+
+![Orbit 2027 festival homepage](./assets/orbit-homepage.png)
+
 ## Run locally
 
 Open `index.html` in a browser, or serve this folder with any static file server. No build step, dependencies or API keys are required.
@@ -24,8 +30,4 @@ The registration form is front-end only. It does not send or save personal infor
 
 ## Deploy
 
-For the first deployment, open the repository’s **Settings → Pages** and set **Build and deployment → Source** to **GitHub Actions**. The repository owner must save this setting.
-
-After Pages is enabled, the `Deploy static site to GitHub Pages` workflow publishes the site on every push to `main`. The public site is available at <https://jayant00007.github.io/College_Fest/>.
-
-No build command is needed. The workflow publishes `index.html`, `styles.css` and `app.js`.
+The live site is hosted on Vercel at <https://collegefest-five.vercel.app/>.
